@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "description": "oclif example Hello World CLI",
   "author": "Max Beatty @maxbeatty",
-  "bin": {
-    "cli": "./bin/run"
-  },
+  "bin": "./bin/run",
   "homepage": "https://github.com/maxbeatty/reproduce-oclif-core-795",
   "license": "ISC",
   "main": "dist/index.js",
