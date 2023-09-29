@@ -1,0 +1,11 @@
+{
+  "name": "reproduce-oclif-core-795",
+  "version": "1.0.0",
+  "description": "Reproducing issue oclif/core#795",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
