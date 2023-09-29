@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js v18
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'yarn'
+    # https://v3.yarnpkg.com/getting-started/install
+    - run: |
+        corepack enable
+        corepack prepare yarn@stable --activate
+        yarn install --immutable --inline-builds
+    - run: yarn workspace cli test
