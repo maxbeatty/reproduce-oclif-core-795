@@ -66,5 +66,8 @@
   "keywords": [
     "oclif"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  }
 }
